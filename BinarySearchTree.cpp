@@ -98,6 +98,7 @@ public:
         // Checks if the tree is empty
         return ROOT == nullptr;
     }
+    
     void inorder(Node *ptr)
     {
         if (isEmpty())
