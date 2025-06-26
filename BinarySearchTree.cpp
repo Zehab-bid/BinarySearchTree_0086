@@ -60,7 +60,11 @@ public:
         // Step 6: If the value in the data field of new node is less than thet of parent
         if (x < parent->info)
         {
-            
+            // 6a: make the left  child of parent point to the new node
+            parent->leftchild = newNode;
+
+            // 6b: exit 
+            return;
         }
     }
 }
