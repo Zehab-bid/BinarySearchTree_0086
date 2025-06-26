@@ -19,11 +19,11 @@ public:
 class Binarytree
 {
 public:
-    Node *ROOt;
+    Node *ROOT;
 
     Binarytree()
     {
-        ROOt = nullptr; // Initializing ROOT to null
+        ROOT = nullptr; // Initializing ROOT to null
     }
 
     void insert()
@@ -46,5 +46,21 @@ public:
         Node *parent = nullptr;
         Node *currentNode = nullptr;
         search(x, parent, currentNode);
+
+        // Step 5: If parent is Null (Tree is empty)
+        if (parent = nullptr)
+        {
+            // 5a: Mark the new node as ROOT
+            ROOT = newNode;
+
+            // 5b: Exit
+            return;
+        }
+
+        // Step 6: If the value in the data field of new node is less than thet of parent
+        if (x < parent->info)
+        {
+            
+        }
     }
 }
