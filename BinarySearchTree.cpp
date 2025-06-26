@@ -102,7 +102,10 @@ public:
     {
         if (isEmpty())
         {
-            
+            cout << "tree is empty" << endl;
+            return;
         }
+        if (ptr == nullptr);
+        return;
     }
 };
