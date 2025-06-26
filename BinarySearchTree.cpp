@@ -48,7 +48,7 @@ public:
         search(x, parent, currentNode);
 
         // Step 5: If parent is Null (Tree is empty)
-        if (parent = nullptr)
+        if (parent == nullptr)
         {
             // 5a: Mark the new node as ROOT
             ROOT = newNode;
@@ -107,5 +107,11 @@ public:
         }
         if (ptr == nullptr);
         return;
+
+        inorder(ptr->leftchild);
+        cout << ptr->info << " "; // parent
+        inorder(ptr->rightchild);
     }
+
+    void preorder(Node *ptr)
 };
